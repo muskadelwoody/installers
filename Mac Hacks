@@ -1,0 +1,16 @@
+Dirty DNS Logging
+---------------------------
+
+$ sudo log config --mode "private_data:on"
+$ log stream --predicate 'process == "mDNSResponder"' --info
+
+
+OR
+
+sudo tcpdump port 53
+
+
+
+
+
+
